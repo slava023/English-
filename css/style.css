@@ -1,0 +1,478 @@
+body {
+    font-family     : 'Raleway', sans-serif;
+    background-color: #fff9ea;
+}
+
+
+.header {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    padding        : 10px;
+    height         : 95px;
+}
+
+.header__item-list {
+    display: flex;
+}
+
+.header__item-link {
+    margin         : 0 42px;
+    text-decoration: none;
+    text-transform : capitalize;
+    font-family    : 'Raleway';
+    font-style     : normal;
+    font-weight    : 300;
+    font-size      : 18px;
+    line-height    : 21px;
+    color          : #000000;
+
+}
+
+.header__item-link:hover,
+.header__item-link:focus {
+    font-size    : 20px;
+    border-bottom: 2px solid #000;
+    transition   : 0.4s;
+    transform    : translateX(40px);
+}
+
+.header__item-link::before {
+    content      : '';
+    position     : absolute;
+    border-bottom: 2px solid #000;
+    transition   : 0.3s;
+    transform    : translateX(20px);
+}
+
+.header__item-telefon {
+    text-decoration: none;
+    font-family    : 'Raleway';
+    font-style     : normal;
+    font-weight    : 300;
+    font-size      : 18px;
+    line-height    : 21px;
+    color          : #000;
+}
+
+.header__item-telefon:hover,
+.header__item-telefon:focus {
+    font-size    : 20px;
+    border-bottom: 2px solid #000;
+    transition   : 0.4s;
+    transform    : translateX(-20px);
+}
+
+/* ========================================================== */
+
+
+.container {
+    margin: 0 auto;
+    width : 1200px;
+}
+
+.intro__items {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    margin-top     : 170px;
+}
+
+.intro__info {
+    width   : 50%;
+    position: relative;
+
+}
+
+.intro__info-subtitle {
+    font-family: 'Raleway';
+    font-style : normal;
+    font-weight: 300;
+    font-size  : 18px;
+    line-height: 21px;
+    color      : #000000;
+
+
+}
+
+.intro__info-title {
+    font-family: 'Raleway';
+    font-style : normal;
+    font-weight: 500;
+    font-size  : 40px;
+    line-height: 47px;
+    color      : #000000;
+    padding    : 20px 0;
+}
+
+.intro__info-text {
+    max-width    : 400px;
+    font-family  : 'Raleway';
+    font-style   : normal;
+    font-weight  : 300;
+    font-size    : 20px;
+    line-height  : 23px;
+    color        : #000000;
+    margin-bottom: 42px;
+}
+
+.intro__info-button {
+    font-weight: 300;
+    font-size  : 18px;
+    line-height: 21px;
+    padding    : 15px 45px;
+    width      : 100%;
+    border     : 1px solid #000;
+    color      : #000;
+    background : radial-gradient(#FEC308, #fff);
+}
+
+.intro__info-button:hover,
+.intro__info-button:focus {
+    border    : 2px solid #000;
+    background: radial-gradient(#fff, #FEC308);
+    transition: 0.4s;
+    transform : translateX(20px);
+}
+
+.intro__info-underline {
+    position: absolute;
+    top     : 85px;
+    left    : 390px;
+}
+
+.intro__info-arrow {
+    position: absolute;
+    top     : 130px;
+    left    : -30px;
+}
+
+.intro__cars {
+
+    padding        : 180px 0 94px 0;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+
+}
+
+.intro__cars-item {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    position      : relative;
+}
+
+.cars-img {
+    position: absolute;
+    top     : -15px;
+    left    : -13px;
+}
+
+.intro__cars-title {
+    font-weight: 400;
+    font-size  : 20px;
+    line-height: 23px;
+    padding    : 13px 0 7px 0;
+    color      : #000000;
+}
+
+.intro__cars-text {
+    font-weight: 300;
+    font-size  : 20px;
+    line-height: 23px;
+
+    color: #000000;
+}
+
+/* ======================================================= */
+.about {
+    border-top    : 1px solid #000;
+    padding-bottom: 188px;
+}
+
+.about__items {
+    display    : flex;
+    align-items: center;
+    margin-top : 228px;
+}
+
+.about__info-text {
+    font-weight : 500;
+    font-size   : 22px;
+    line-height : 26px;
+    padding-left: 115px;
+    color       : #000000;
+
+}
+
+.about__info {
+    position: relative;
+
+}
+
+.about__info-name {
+    position: absolute;
+    top     : -130px;
+    left    : 40px;
+}
+
+.about__info-line {
+    position: absolute;
+    top     : 22px;
+    left    : 80px;
+}
+
+.about__info-text p {
+
+    padding-bottom: 20px;
+}
+
+/* ======================================================================= */
+
+.program {
+
+    background     : url(../img/program/фон.png) center center no-repeat fixed;
+    background-size: cover;
+}
+
+.program__items {
+    padding        : 90px 0;
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: center;
+
+}
+
+.program__item {
+    width          : 480px;
+    height         : 340px;
+    justify-content: center;
+    align-items    : center;
+    display        : flex;
+    margin         : 45px;
+
+    border: 1px solid #000;
+
+
+}
+
+.program__item-w {
+    display         : flex;
+    background-color: #fbcfb5;
+    width           : 430px;
+    height          : 295px;
+    flex-direction  : column;
+    align-items     : center;
+    justify-content : center;
+
+}
+
+.program__item-pos {
+    display       : flex;
+    flex-direction: column;
+    position      : relative;
+
+}
+
+
+
+.program__item-filter {
+    width      : 200px;
+    font-weight: 500;
+    font-size  : 24px;
+    line-height: 28px;
+    color      : rgba(114, 114, 114, 0);
+    background : rgba(97, 0, 255, 0.32);
+    filter     : blur(3.5px);
+    position   : absolute;
+}
+
+.program__item-yellow {
+    background: rgba(254, 195, 8, 0.63);
+    filter    : blur(3.5px);
+}
+
+.program__item-orange {
+    background: rgba(250, 121, 48, 0.6);
+    filter    : blur(3.5px);
+}
+
+.program__item-title {
+    width      : 200px;
+    font-weight: 500;
+    font-size  : 24px;
+    line-height: 28px;
+    color      : #000000;
+    position   : relative;
+}
+
+.program__item-text {
+    padding-top: 20px;
+    width      : 320px;
+    font-weight: 300;
+    font-size  : 20px;
+    line-height: 23px;
+
+    color: #000000;
+}
+
+.program__item-arrow {
+    position: absolute;
+    top     : 15px;
+    left    : -35px;
+}
+
+.program__item-radius {
+    position: absolute;
+    top     : -15px;
+    left    : 180px;
+}
+
+.program__item-zig {
+    position: absolute;
+    top     : -40px;
+    left    : 180px;
+}
+
+/* ======================================================================= */
+
+.test {
+    margin    : 100px;
+    background: url(../img/test/фон.png) center no-repeat;
+
+}
+
+.test__carts {
+    width          : 100%;
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: space-around;
+    align-items    : center;
+}
+
+
+.test__cart {
+    padding       : 40px 40px 0 100px;
+    margin-top    : 80px;
+    display       : flex;
+    flex-direction: column;
+    width         : 540px;
+    height        : 380px;
+    background    : #FBF0D3;
+    box-shadow    : 6px 7px 9px rgba(0, 0, 0, 0.25);
+    position      : relative;
+}
+
+.test__cart--text {
+    font-weight: 300;
+    font-size  : 24px;
+    line-height: 38px;
+    color      : #000000;
+
+}
+
+.test__cart--text p span {
+    color: #6100FF;
+}
+
+.test__cart--img {
+    position: absolute;
+    top     : 55px;
+    left    : 70px;
+}
+
+.test__cart--link {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    margin-top     : 40px;
+    width          : 200px;
+    padding        : 10px 10px;
+    border         : 1px solid #000;
+    color          : #000;
+    background     : radial-gradient(#FEC308, #fff);
+    margin-bottom  : 40px;
+}
+
+.test__cart--link:hover,
+.test__cart--link:focus {
+    border    : 2px solid #000;
+    background: radial-gradient(#fff, #FEC308);
+    transition: 0.4s;
+    transform : translateX(10px);
+}
+
+.review {
+    border-top: 1px solid #000;
+    position  : relative;
+}
+
+.review__arrow {
+    position: absolute;
+    top     : 95px;
+    right   : 125px;
+}
+
+.review__text {
+    padding-top    : 40px;
+    display        : flex;
+    justify-content: flex-end;
+    font-weight    : 400;
+    font-size      : 20px;
+    line-height    : 23px;
+
+    color: #000000;
+}
+
+.review__img {
+    padding: 38px 0;
+}
+
+/* ================================================================= */
+
+.footer {
+
+    background     : url(../img/program/фон.png) center center no-repeat fixed;
+    background-size: cover;
+    padding: 20px 0;
+    
+}
+
+.footer__items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__logo--right {
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : flex-start;
+}
+
+.footer__logo--right {
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : flex-start;
+}
+
+.footer__logo--info {
+    font-weight: 200;
+    font-size  : 18px;
+    line-height: 23px;
+
+    padding: 2px 0px;
+    color  : #fff;
+
+}
+
+.footer__rev {
+    font-weight: 200;
+    font-size  : 18px;
+    line-height: 23px;
+
+    color: #fff;
+}
